@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="EGit.KnownHosts">
+		<item value="bitbucket.org"/>
+		<item value="github.com"/>
+		<item value="git.eclipse.org"/>
+		<item value="p-bitbucket.nl.eu.abnamro.com"/>
+	</list>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://p-bitbucket.nl.eu.abnamro.com:7999/scm/~jo3353/spring-mvc-archetype.git"/>
+	</list>
+	<section name="GitCommitMessageComponent">
+		<list key="C:\Users\MA4584\git\dev_bp\.git">
+			<item value="empty"/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item value="200,200" key="STAGING_SASH_FORM_WEIGHT"/>
+		<item value="false" key="sortItemState"/>
+		<item value="200,200" key="HORIZONTAL_SASH_FORM_WEIGHT"/>
+	</section>
+</section>

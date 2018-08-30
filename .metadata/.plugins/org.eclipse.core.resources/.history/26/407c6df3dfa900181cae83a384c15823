@@ -1,0 +1,171 @@
+package tests;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
+
+public class binarySearch {
+
+	private static Scanner scanner;
+	static List<Integer> enteries = new ArrayList<Integer>();
+	// static int simpleArray[];
+	static int sNumber;
+	static boolean higher;	
+	static int midvalue;
+	static int midindex;
+	
+	public static boolean isStringInt(String s)
+	{
+	    try
+	    {
+	        Integer.parseInt(s);
+	        return true;
+	    } catch (NumberFormatException ex)
+	    {
+	        return false;
+	    }
+	}
+	
+	public static void createList (String[] args) 
+	
+	{
+		// enter a row of numbers
+		System.out.println("Enter your own amount of numbers to a list. Press 'enter' after every number. ");
+		System.out.println("Letters will be ignored. Type 'ready' if you are ready.");
+				
+		scanner = new Scanner(System.in);
+		String number = "";
+		int inumber = Integer.parseInt(number);
+								
+				do 
+				{
+				number = scanner.nextLine();
+				
+				// check if stop-sign is given
+				if(!number.equalsIgnoreCase("ready"))
+					{
+					// check if they are numbers instead of other values, add as numbers
+					if (isStringInt(number)) 
+					{ //test
+						System.out.println(inumber);
+						enteries.add(inumber);
+					 }
+					else System.out.println("Sorry only numbers allowed.");
+					}
+				else System.out.print("thank you; numbers are added and row is made.");
+				}
+				
+				while (!number.equalsIgnoreCase("ready"));
+				
+				// sort the list
+				Collections.sort(enteries);
+					
+				// test that its correct
+				System.out.print(enteries);
+				
+				// check if enteries is int!!! to be done		
+	}
+	
+
+	public static void findMiddle()
+	{
+	// enter your number
+	System.out.print("Enter the number you want to find in the list.");
+	scanner = new Scanner(System.in);
+	String esNumber = scanner.nextLine();
+	
+	// convert input to int and use this
+	 sNumber = Integer.parseInt(esNumber);
+			
+	// midvalue is the middle of an total index rounded upwards
+	midindex = enteries.indexOf(Math.round(enteries.size()/2))+1;
+	midvalue = enteries.get (midindex);
+	
+	// test
+	System.out.println ("size is: " + enteries.size());
+	System.out.println ("middle index is: " + midindex);
+	System.out.println ("mid value is: " + midvalue);
+	}
+
+	
+	public static boolean higherOrlowersearch()
+	//check if midvalue is higher/equal (true) or lower (false) than the number to search
+	{
+	
+	if ((int) midvalue >= (int) sNumber) 
+	{
+		// higher = true;
+		System.out.println ("midvalue is equal or higher");
+		return higher = true;
+	}  
+	else 
+	{
+		System.out.println ("midvalue is lower");
+		return higher = false;	
+	}
+	
+	}
+	
+	
+	
+	public static void searchNumber () 
+	{
+		boolean found = false;
+		int i;
+		
+		//check higher from middle
+		if (higherOrlowersearch() == true)
+			
+		{
+		for (i = (midindex); i < (enteries.size()-1) ; i++)
+			{
+			if (enteries.get(i) == (sNumber))
+		 	{
+			// found
+			 found = true;
+			 break;
+		 	}	
+			}
+
+		}
+		
+		//check lower from middle
+		else  
+		{
+			for (i = (midindex); i > 0 ; i--)
+			{
+			 if (enteries.get(i).equals(sNumber))
+			 {
+				// found
+				 found = true;
+				 break;
+			 }		
+			}
+		}
+		
+		// if found / not found
+		if (found = true) 
+			{ System.out.println ("Equal number " + sNumber + " found in position "  + enteries.get(i));
+			}
+			
+		else  System.out.println ("Number " + sNumber + " not found in List ");
+				}
+	
+	
+	
+	public static void main(String[] args) 
+	{
+		
+		createList(args);
+		findMiddle();
+		// something wrong from here....
+		// boolean higher or lower goes wrong
+		searchNumber ();
+		
+			
+		}
+}
+
+
+
