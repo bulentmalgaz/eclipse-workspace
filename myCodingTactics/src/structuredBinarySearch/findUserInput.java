@@ -1,5 +1,5 @@
 package structuredBinarySearch;
-//got
+
 
 import java.util.Scanner;
 
