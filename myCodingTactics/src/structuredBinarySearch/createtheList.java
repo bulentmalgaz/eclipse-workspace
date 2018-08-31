@@ -1,31 +1,17 @@
 package structuredBinarySearch;
-
+//test
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
-public class createtheList {
 
+public class createtheList {
 	private static Scanner scanner;
 	static List<Integer> enteries = new ArrayList<Integer>();
-		
-	public static boolean isStringInt(String s)
-	{
-	    try
-	    {
-	        Integer.parseInt(s);
-	        return true;
-	    } catch (NumberFormatException ex)
-	    {
-	        return false;
-	    }
-	}
-	
-		
 	public static void createList (String[] args) 
 	
-	{
+		{
 			
 		// enter a row of numbers
 		System.out.println("Enter your own amount of numbers to a list. Press 'enter' after every number. ");
@@ -62,6 +48,17 @@ public class createtheList {
 				System.out.println("these are the enteries:" + enteries);
 										
 	}
+		
+	public static boolean isStringInt(String s)
+	{
+	    try
+	    {
+	        Integer.parseInt(s);
+	        return true;
+	    } catch (NumberFormatException ex)
+	    {
+	        return false;
+	    }
+	}
+	
 }
-
-

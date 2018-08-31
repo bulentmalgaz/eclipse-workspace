@@ -1,22 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="0" key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel"/>
 	<list key="EGit.KnownHosts">
+		<item value="p-bitbucket.nl.eu.abnamro.com"/>
+		<item value="git.eclipse.org"/>
 		<item value="bitbucket.org"/>
 		<item value="github.com"/>
-		<item value="git.eclipse.org"/>
-		<item value="p-bitbucket.nl.eu.abnamro.com"/>
 	</list>
 	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/bulentmalgaz/eclipse-workspace.git"/>
 		<item value="https://p-bitbucket.nl.eu.abnamro.com:7999/scm/~jo3353/spring-mvc-archetype.git"/>
 	</list>
+	<section name="GitImportWizard">
+	</section>
 	<section name="GitCommitMessageComponent">
 		<list key="C:\Users\MA4584\git\dev_bp\.git">
 			<item value="empty"/>
 		</list>
+		<list key="C:\Users\MA4584\git\eclipse-workspace\.git">
+			<item value="false"/>
+			<item value="bulentmalgaz &lt;33319033+bulentmalgaz@users.noreply.github.com&gt;"/>
+			<item value="test"/>
+			<item value="bulentmalgaz &lt;33319033+bulentmalgaz@users.noreply.github.com&gt;"/>
+			<item value="0000000000000000000000000000000000000000"/>
+			<item value="0"/>
+		</list>
+	</section>
+	<section name="GitCommitSearchPage">
+		<item value="1" key="HISTORY_SIZE"/>
+		<section name="HISTORY0">
+			<section name="searchSection">
+				<item value="1" key="repositoryCount"/>
+				<item value="C:\Users\MA4584\git\eclipse-workspace\.git" key="repository0"/>
+				<item value="false" key="regexSearch"/>
+				<item value="true" key="matchAuthor"/>
+				<item value="true" key="matchMessage"/>
+				<item value="true" key="ignoreCase"/>
+				<item value="true" key="matchParents"/>
+				<item value="false" key="allBranches"/>
+				<item value="true" key="matchCommit"/>
+				<item value="true" key="matchTree"/>
+				<item value="" key="textPattern"/>
+				<item value="true" key="matchCommitter"/>
+			</section>
+		</section>
 	</section>
 	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
-		<item value="200,200" key="STAGING_SASH_FORM_WEIGHT"/>
+		<item value="500,500" key="STAGING_SASH_FORM_WEIGHT"/>
 		<item value="false" key="sortItemState"/>
-		<item value="200,200" key="HORIZONTAL_SASH_FORM_WEIGHT"/>
+		<item value="500,500" key="HORIZONTAL_SASH_FORM_WEIGHT"/>
+	</section>
+	<section name="CommitSelectionDialogSection">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History/&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="391" key="DIALOG_X_ORIGIN"/>
+			<item value="39" key="DIALOG_Y_ORIGIN"/>
+		</section>
 	</section>
 </section>

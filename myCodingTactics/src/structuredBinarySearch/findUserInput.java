@@ -1,8 +1,5 @@
 package structuredBinarySearch;
-
-/* issues
-* watch out for the end positions :) list size versus position in index in loops
- */
+//got
 
 import java.util.Scanner;
 
@@ -57,6 +54,15 @@ public class findUserInput {
 	
 	
 	
+	public static void main(String[] args) 
+	{	
+		createtheList.createList(args); 
+		enterSearch();
+		findMiddle();
+		searchNumber();
+		}
+	
+	
 	public static void searchNumber () 
 	{
 		boolean found = false;
@@ -100,15 +106,6 @@ public class findUserInput {
 			
 		else  System.out.println ("Number " + sNumber + " not found in List ");
 				}
-	
-	
-	public static void main(String[] args) 
-	{	
-		createtheList.createList(args); 
-		enterSearch();
-		findMiddle();
-		searchNumber();
-		}
 }
 
 
