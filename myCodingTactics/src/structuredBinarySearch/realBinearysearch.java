@@ -12,6 +12,7 @@ public class realBinearysearch {
 	static int lastindex;
 	static boolean found;
 		
+	// test
 	public static void enterSearch()
 	{
 	// enter your number and convert to int.
