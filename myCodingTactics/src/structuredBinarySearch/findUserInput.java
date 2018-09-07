@@ -1,4 +1,6 @@
-package structuredBinarySearch;
+
+// prevent interference
+// package structuredBinarySearch;
 
 
 import java.util.Scanner;

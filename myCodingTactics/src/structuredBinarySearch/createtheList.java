@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class createtheList {
 	private static Scanner scanner;
 	static List<Integer> enteries = new ArrayList<Integer>();
+	
 	public static void createList (String[] args) 
 	
 		{
