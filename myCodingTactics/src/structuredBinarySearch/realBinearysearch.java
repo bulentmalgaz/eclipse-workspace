@@ -26,7 +26,7 @@ public class realBinearysearch {
 		// initial setup
 		beginindex = 0;
 		lastindex = (createtheList.enteries.size()-1);
-		midindex = Math.round(((lastindex+beginindex))/2);
+		midindex = Math.round(((lastindex+beginindex)/2));
 		midvalue = createtheList.enteries.get(midindex);
 		
 		System.out.println ("last index is: " + lastindex);
